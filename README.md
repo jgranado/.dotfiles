@@ -21,7 +21,8 @@ then:
     ln -s .dotfiles/.zshrc .zshrc
     ln -s .dotfiles/.gitconfig .gitconfig
 
-then
+then:
+
     Download and install a patched font from https://github.com/Lokaltog/powerline-fonts
     ln -s .dotfiles/.janus .janus
     hub clone Lokaltog/powerline ~/.janus/powerline
