@@ -26,7 +26,8 @@ autocmd BufWritePre * :call StripTrailingWhitespaces()
 
 " invisibles
 set list
-set listchars=tab:▸\ ,eol:¬
+"set listchars=tab:▸\ ,trail:•,eol:¬
+set listchars=tab:▸\ ,eol:¬,trail:•
 
 " CtrlP ignore directories
 set wildignore+=*/tmp/*,*/spec/fixtures/cassettes/*,*/app/assets/images/*,*/public/*
@@ -35,7 +36,7 @@ set wildignore+=*/tmp/*,*/spec/fixtures/cassettes/*,*/app/assets/images/*,*/publ
 set wildmenu
 set wildmode=longest,list
 
-"let mapleader=","
+let mapleader=","
 
 " change ruby 1.8 hashrocket to new 1.9 syntax
 "command! -bar -range=% NotRocket execute '<line1>,<line2>s/:\(\w\+\)\s*=>/\1:/e' . (&gdefault ? '' : 'g')

@@ -14,12 +14,11 @@
   changed = green
   untracked = cyan
 
-[color]
-  ui = true
 [color "diff"]
   whitespace = red reverse
 [core]
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+  excludesfile = /Users/jorge/.gitignore_global
 
 [alias]
   st = status
@@ -31,8 +30,21 @@
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
 
-[user]
-  name = miles
-  email = miles@thespecials.com
 [push]
   default = upstream
+
+[user]
+  name = jgranado
+  email = jorge@cooksnaps.com
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+#[mergetool "sourcetree"]
+#  cmd = /Users/jorge/Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+#  trustExitCode = true
+[color]
+  ui = true
+  diff = true
+[mergetool "sourcetree"]
+	cmd = /Users/jorge/Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

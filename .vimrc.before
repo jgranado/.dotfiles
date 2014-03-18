@@ -5,3 +5,6 @@ call janus#disable_plugin('nerdcommenter')
 call janus#disable_plugin('scss')
 
 let g:Powerline_symbols = 'fancy'
+
+set rtp+=~/.janus/powerline/powerline/bindings/vim
+set guifont=Inconsolata-dz\ for\ Powerline:h12

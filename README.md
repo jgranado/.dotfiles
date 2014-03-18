@@ -20,3 +20,11 @@ then:
     ln -s .dotfiles/.gvimrc.local .gvimrc.local
     ln -s .dotfiles/.zshrc .zshrc
     ln -s .dotfiles/.gitconfig .gitconfig
+
+then
+    Download and install a patched font from https://github.com/Lokaltog/powerline-fonts
+    ln -s .dotfiles/.janus .janus
+    hub clone Lokaltog/powerline ~/.janus/powerline
+    echo 'set rtp+=~/.janus/powerline/powerline/bindings/vim` >> ~/.vimrc.before
+    echo 'set guifont=Inconsolata-dz\ for\ Powerline:h12'  >> ~/.vimrc.before
+
