@@ -13,7 +13,7 @@ then install tmux:
 then:
 
     cd ~
-    git clone git@github.com:tapster/.dotfiles.git
+    git clone git@github.com:jgranado/.dotfiles.git
     ln -s .dotfiles/.tmux.conf .tmux.conf
     ln -s .dotfiles/.vimrc.after .vimrc.after
     ln -s .dotfiles/.vimrc.before .vimrc.before
@@ -26,6 +26,6 @@ then:
     Download and install a patched font from https://github.com/Lokaltog/powerline-fonts
     ln -s .dotfiles/.janus .janus
     hub clone Lokaltog/powerline ~/.janus/powerline
-    echo 'set rtp+=~/.janus/powerline/powerline/bindings/vim` >> ~/.vimrc.before
+    echo 'set rtp+=~/.janus/powerline/powerline/bindings/vim' >> ~/.vimrc.before
     echo 'set guifont=Inconsolata-dz\ for\ Powerline:h12'  >> ~/.vimrc.before
 
